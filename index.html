@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laudo e Orçamento</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;      
+            background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+        }
+        img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: auto;
+    }
+
+        form {
+            background-color: #666666;
+            max-width: 600px;
+            margin: 0 auto;           
+        }
+
+        .box{
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+           
+            padding: 15px;
+            border-radius: 15px;
+            width: 20%;
+        }
+
+        .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-top: 50px;
+    }
+
+        label {
+            background-color: #B06611;
+            display: block;
+            margin-bottom: 8px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            background-color: #889196;
+        }
+        button {
+            background-color: #4CAF50;
+            color: black;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="post">
+        
+         <img src="imagem/emp.jpg">
+
+    <form action="#" method="post">
+        <h2>LAUDO TÉCNICO E ORÇAMENTO</h2>
+
+        <label for="cliente">Cliente:</label>
+        <input type="text" id="cliente" name="cliente" required>
+
+        <label for="Serviço">Tipo de Serviço:</label>
+        <select id="Serviço" name="Serviço" required>           
+            <option value="Visita Tecnica">Visita Tecnica</option>
+            <option value="Manutenção">Consultoria</option>
+            <option value="Manutenção">Manutenção</option>
+            <option value="Manutenção">Instalação</option>
+            <option value="Conserto">Conserto</option>
+            <option value="Troca de Oléo">Troca de Oléo</option>
+        </select>       
+<br><br>
+        <label for="Equipamento">Equipamento:</label>
+        <select id="Equipamento" name="Equipamento" required>
+            <option value="Paleteira">Paleteira</option>
+            <option value="Transpaleteira Eletrica">Transpaleteira Eletrica</option>
+            <option value="Empilhadeira Eletrica">Empilhadeira Eletrica</option>
+            <option value="Empilhadeira Combustão">Empilhadeira Combustão</option>
+        </select>
+
+        <h3>DESCRIÇÃO DO EQUIPAMENTO:</h3>
+        <label for="Marca"> Marca:</label>       
+        <input type="text" id="Marca" name="Marca" required>
+
+        <label for="modelo">Modelo:</label>
+        <input type="text" id="modelo" name="modelo" required>
+
+        <label for="numero_serie">Número de Série:</label>
+        <input type="text" id="numero_serie" name="numero_serie" required>
+
+        <h3>Laudo Técnico</h3>
+
+        <label for="problemas">Problemas Identificados:</label>
+        <textarea id="problemas" name="problemas" rows="4" required></textarea>
+
+        <h3>Orçamento</h3>
+
+        <label for="mao_obra">Mão de Obra:</label>
+        <input type="text" id="mao_obra" name="mao_obra" required>
+
+        <label for="pecas">Peças e Materiais:</label>
+        <input type="text" id="pecas" name="pecas" required>
+
+        <label for="outros_custos">Outros Custos:</label>
+        <input type="text" id="outros_custos" name="outros_custos">
+
+        <label for="Valor Estimado">Valor Estimado (R$):</label>
+        <input type="text" id="Valor Estimado (R$)" name="Valor Estimado">
+
+        <label for="Autorização do Cliente">Autorização do Cliente:</label>
+        <select id="Autorização do Cliente" name="Autorização do Cliente" required>
+            <option value="Sim">Sim</option>
+            <option value="Não">Não</option>
+            <option value="Stand by">Stand by</option>
+<br><br>
+
+        <label for="data">Data:</label>
+        <input type="date" id="data" name="data" required>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+</html>
+
